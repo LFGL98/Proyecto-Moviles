@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">buttonopenactivity</string>
+    <string name="places_api_key">AIzaSyDZaxRFRuxU21aaLpn3bqTH8Vpko66Wj68</string>
+    <string name="brujula">Brujula</string>
+    <string name="podometro">Podometro</string>
+    <string name="mapa">Mapa</string>
+    AIzaSyDZaxRFRuxU21aaLpn3bqTH8Vpko66Wj68
+</resources>
