@@ -6,24 +6,33 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Podometro extends AppCompatActivity implements SensorEventListener {
-
+    private Button button;
     TextView tv_steps;
     SensorManager sensorManager;
     boolean running = false;
+    String reset=  "0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
-
+        button = (Button) findViewById(R.id.button3);
         tv_steps = (TextView)findViewById(R.id.tv_steps);
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity();
+            }
+        });
 
     }
 
@@ -58,6 +67,10 @@ public class Podometro extends AppCompatActivity implements SensorEventListener 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    public  void openActivity(){
+        tv_steps.setText(String.valueOf(reset));
     }
 }
 
