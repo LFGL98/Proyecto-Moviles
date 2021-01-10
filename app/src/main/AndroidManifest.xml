@@ -14,7 +14,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
-        android:label="Contador de pasos"
+        android:label="Survival"
         android:roundIcon="@mipmap/icon_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
