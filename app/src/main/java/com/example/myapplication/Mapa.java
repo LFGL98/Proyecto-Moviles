@@ -37,7 +37,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
 
-    //El buscador requiere una subscripcion con tarjeta de credito
+    //El buscador requiere una subscripcion con tarjeta de credito en console cloud
     private GoogleMap mMap;
     Double latitude, longitude;
 
